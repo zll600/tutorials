@@ -1,11 +1,14 @@
 # Create Elastic IPs for NAT Gateways
 resource "aws_eip" "nat" {
-  count = length(local.availability_zones)
+  count  = length(local.availability_zones)
   domain = "vpc"
 
-  tags = {
-    Name = "nat-eip-${count.index + 1}"
-  }
+  tags = merge(
+    local.common_tags,
+    {
+      Name = "${local.name_prefix}-nat-eip-${count.index + 1}"
+    }
+  )
 }
 
 # Create NAT Gateways
@@ -14,9 +17,12 @@ resource "aws_nat_gateway" "nat" {
   allocation_id = aws_eip.nat[count.index].id
   subnet_id     = aws_subnet.public[count.index].id
 
-  tags = {
-    Name = "nat-gateway-${count.index + 1}"
-  }
+  tags = merge(
+    local.common_tags,
+    {
+      Name = "${local.name_prefix}-nat-gateway-${count.index + 1}"
+    }
+  )
 
   depends_on = [aws_internet_gateway.main]
 }
@@ -31,9 +37,12 @@ resource "aws_route_table" "private" {
     nat_gateway_id = aws_nat_gateway.nat[count.index].id
   }
 
-  tags = {
-    Name = "private-route-table-${count.index + 1}"
-  }
+  tags = merge(
+    local.common_tags,
+    {
+      Name = "${local.name_prefix}-private-route-table-${count.index + 1}"
+    }
+  )
 }
 
 # Associate private subnets with private route tables

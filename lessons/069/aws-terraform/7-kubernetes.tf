@@ -1,6 +1,6 @@
 # IAM Role for EKS Cluster
 resource "aws_iam_role" "eks_cluster" {
-  name = "eks-cluster-role"
+  name = "${local.name_prefix}-cluster-role"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -14,6 +14,8 @@ resource "aws_iam_role" "eks_cluster" {
       }
     ]
   })
+
+  tags = local.common_tags
 }
 
 # Attach required EKS cluster policies
@@ -24,7 +26,7 @@ resource "aws_iam_role_policy_attachment" "eks_cluster_policy" {
 
 # IAM Role for EKS Node Group
 resource "aws_iam_role" "eks_nodes" {
-  name = "eks-node-group-role"
+  name = "${local.name_prefix}-node-role"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -38,6 +40,8 @@ resource "aws_iam_role" "eks_nodes" {
       }
     ]
   })
+
+  tags = local.common_tags
 }
 
 # Attach required EKS node policies
@@ -58,9 +62,9 @@ resource "aws_iam_role_policy_attachment" "eks_container_registry_policy" {
 
 # Create EKS Cluster
 resource "aws_eks_cluster" "eks" {
-  name     = "eks-cluster"
+  name     = "${local.name_prefix}-cluster"
   role_arn = aws_iam_role.eks_cluster.arn
-  version  = "1.27"
+  version  = "1.31"
 
   vpc_config {
     subnet_ids             = aws_subnet.private[*].id
@@ -73,6 +77,8 @@ resource "aws_eks_cluster" "eks" {
   depends_on = [
     aws_iam_role_policy_attachment.eks_cluster_policy
   ]
+
+  tags = local.common_tags
 }
 
 # Create EKS Node Group
@@ -88,7 +94,7 @@ resource "aws_eks_node_group" "general" {
     min_size     = 1
   }
 
-  instance_types = ["t3.medium"]
+  instance_types = ["t2.medium"]
 
   # Ensure that IAM Role permissions are created before and deleted after EKS Node Group handling
   depends_on = [
@@ -96,4 +102,6 @@ resource "aws_eks_node_group" "general" {
     aws_iam_role_policy_attachment.eks_cni_policy,
     aws_iam_role_policy_attachment.eks_container_registry_policy
   ]
+
+  tags = local.common_tags
 }

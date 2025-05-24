@@ -7,9 +7,12 @@ resource "aws_route_table" "public" {
     gateway_id = aws_internet_gateway.main.id
   }
 
-  tags = {
-    Name = "public-route-table"
-  }
+  tags = merge(
+    local.common_tags,
+    {
+      Name = "${local.name_prefix}-public-route-table"
+    }
+  )
 }
 
 # Associate public subnets with the public route table

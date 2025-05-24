@@ -1,12 +1,6 @@
 // AWS Provider
 provider "aws" {
-  region = "us-east-2"
-}
-
-# https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/integer
-resource "random_integer" "int" {
-  min = 100
-  max = 1000000
+  region = local.region
 }
 
 terraform {

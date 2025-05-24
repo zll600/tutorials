@@ -1,6 +1,6 @@
 # Security Group for EKS cluster
 resource "aws_security_group" "eks_cluster" {
-  name        = "eks-cluster-sg"
+  name        = "${local.name_prefix}-cluster-sg"
   description = "Security group for EKS cluster"
   vpc_id      = aws_vpc.main.id
 
@@ -12,14 +12,17 @@ resource "aws_security_group" "eks_cluster" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  tags = {
-    Name = "eks-cluster-sg"
-  }
+  tags = merge(
+    local.common_tags,
+    {
+      Name = "${local.name_prefix}-cluster-sg"
+    }
+  )
 }
 
 # Security Group for EKS nodes
 resource "aws_security_group" "eks_nodes" {
-  name        = "eks-nodes-sg"
+  name        = "${local.name_prefix}-nodes-sg"
   description = "Security group for EKS nodes"
   vpc_id      = aws_vpc.main.id
 
@@ -31,9 +34,12 @@ resource "aws_security_group" "eks_nodes" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  tags = {
-    Name = "eks-nodes-sg"
-  }
+  tags = merge(
+    local.common_tags,
+    {
+      Name = "${local.name_prefix}-nodes-sg"
+    }
+  )
 }
 
 # Allow nodes to communicate with the cluster API server
