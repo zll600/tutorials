@@ -1,5 +1,5 @@
 # FROM golang:1.19.5-buster AS build
-FROM golang:1.19.5 AS build
+FROM golang:1.24.4 AS build
 
 WORKDIR /app
 
