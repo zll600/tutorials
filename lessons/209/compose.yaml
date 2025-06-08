@@ -12,7 +12,7 @@ services:
       - minio-data:/data
 
   postgres:
-    image: postgres:16.4
+    image: postgres:16.9
     ports:
       - 5432:5432
     environment:
