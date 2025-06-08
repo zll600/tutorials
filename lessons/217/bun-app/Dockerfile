@@ -1,4 +1,4 @@
-FROM oven/bun:1.1.30 AS build
+FROM oven/bun:1.2.15 AS build
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ RUN bun install --frozen-lockfile --production
 
 RUN bun run build
 
-FROM oven/bun:1.1.30-distroless
+FROM oven/bun:1.2.2-distroless
 
 COPY --from=build /app/bun-app /bun-app
 
