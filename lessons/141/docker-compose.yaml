@@ -28,7 +28,7 @@ services:
     - ./test-access.log:/var/log/nginx/access.log
 
   prometheus:
-    image: prom/prometheus:v2.41.0
+    image: prom/prometheus:v2.55.1
     ports:
       - 9090:9090
     volumes:
