@@ -4,7 +4,7 @@ go 1.23.4
 
 require (
 	github.com/antonputra/go-utils v0.1.4
-	github.com/bradfitz/gomemcache v0.0.0-20230905024940-24af94b03874
+	github.com/bradfitz/gomemcache v0.0.0-20250403215159-8d39553ac7cf
 	github.com/google/uuid v1.6.0
 	github.com/jackc/pgx/v5 v5.7.2
 	github.com/json-iterator/go v1.1.12
