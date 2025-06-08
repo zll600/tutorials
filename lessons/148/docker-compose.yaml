@@ -11,7 +11,7 @@ services:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
 
   pushgateway:
-    image: prom/pushgateway:v1.5.1
+    image: prom/pushgateway:v1.11.1
     ports:
       - 9091:9091
 
