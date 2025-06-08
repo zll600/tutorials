@@ -5,5 +5,5 @@ resource "helm_release" "linkerd_crds" {
   chart            = "linkerd-crds"
   namespace        = "linkerd"
   create_namespace = true
-  version          = "1.6.1"
+  version          = "1.8.0"
 }
