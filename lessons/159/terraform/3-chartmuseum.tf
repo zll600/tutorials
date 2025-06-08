@@ -7,7 +7,7 @@ resource "helm_release" "chartmuseum" {
   chart            = "chartmuseum"
   namespace        = "chartmuseum"
   create_namespace = true
-  version          = "3.9.3"
+  version          = "3.10.4"
 
   values = [file("values/chartmuseum.yaml")]
 }
