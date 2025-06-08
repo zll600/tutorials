@@ -9,5 +9,5 @@ resource "helm_release" "keda" {
   chart            = "keda"
   namespace        = "keda"
   create_namespace = true
-  version          = "2.12.0"
+  version          = "2.17.1"
 }
