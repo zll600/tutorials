@@ -4,7 +4,7 @@ go 1.23.2
 
 require (
 	github.com/IBM/sarama v1.43.3
-	github.com/aristanetworks/goarista v0.0.0-20241014070143-87963655ea25
+	github.com/aristanetworks/goarista f4ed8abc2512
 	github.com/google/uuid v1.6.0
 	github.com/prometheus/client_golang v1.20.5
 	github.com/rabbitmq/amqp091-go v1.10.0
