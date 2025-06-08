@@ -7,7 +7,7 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/prometheus/client_golang v1.20.5
 	github.com/redis/rueidis v1.0.52
-	golang.org/x/exp v0.0.0-20241108190413-2d47ceb2692f
+	golang.org/x/exp v0.0.0-20250606033433-dcc06ee1d476
 	gopkg.in/yaml.v2 v2.4.0
 )
 
