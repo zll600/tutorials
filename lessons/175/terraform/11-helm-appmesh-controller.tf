@@ -32,7 +32,7 @@ resource "helm_release" "appmesh_controller" {
   chart            = "appmesh-controller"
   namespace        = "appmesh-system"
   create_namespace = true
-  version          = "1.12.3"
+  version          = "1.13.1"
 
   set {
     name  = "serviceAccount.name"
