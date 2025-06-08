@@ -42,6 +42,8 @@ github.com/andybalholm/brotli v1.0.4 h1:V7DdXeJtZscaqfNuAdSRuRFzuiKlHSC/Zh3zl9qY
 github.com/andybalholm/brotli v1.0.4/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
 github.com/antonputra/tutorials/lessons/151/go-app v0.0.0-20230204010310-7b1be8c0a447 h1:Koy0dprmCzaTB3GmfWbs7k2tZfamA7b9EjsTgJ2Nwuo=
 github.com/antonputra/tutorials/lessons/151/go-app v0.0.0-20230204010310-7b1be8c0a447/go.mod h1:AsEmAa8uYjpxgqyqrA0YQ6YHKqvPH799II3eFZH37G4=
+github.com/antonputra/tutorials/lessons/151/go-app v0.0.0-20250522082422-e00fd9253fc1 h1:9vGNAORs+xj4hIeAd0xygKjpHVkm3lWS9wa1OFXDr3g=
+github.com/antonputra/tutorials/lessons/151/go-app v0.0.0-20250522082422-e00fd9253fc1/go.mod h1:AsEmAa8uYjpxgqyqrA0YQ6YHKqvPH799II3eFZH37G4=
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
 github.com/beorn7/perks v1.0.0/go.mod h1:KWe93zE9D1o94FZ5RNwFwVgaQK1VOXiVxmqh+CedLV8=
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
