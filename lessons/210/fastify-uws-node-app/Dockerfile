@@ -1,4 +1,4 @@
-FROM node:20.17.0 AS build
+FROM node:20.19.2 AS build
 
 COPY . /app
 
