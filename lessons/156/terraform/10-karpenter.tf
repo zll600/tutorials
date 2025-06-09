@@ -21,7 +21,7 @@ provider "kubectl" {
 # Creates Karpenter native node termination handler resources and IAM instance profile
 module "karpenter" {
   source  = "terraform-aws-modules/eks/aws//modules/karpenter"
-  version = "19.10.0"
+  version = "19.21.0"
 
   cluster_name           = module.eks_blueprints.eks_cluster_id
   irsa_oidc_provider_arn = module.eks_blueprints.eks_oidc_provider_arn
