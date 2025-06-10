@@ -16,7 +16,7 @@ services:
     - minio:/data
 
   mongo:
-    image: mongo:6.0.24
+    image: mongo:8.0.10@sha256:15fb53a5160ebabff5ecade8f8b5d48721b68ea190957a7f35b5b38e8340e62b
     ports:
     - 27017:27017
     environment:
