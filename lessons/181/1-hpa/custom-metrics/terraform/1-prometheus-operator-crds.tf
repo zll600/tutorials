@@ -9,5 +9,5 @@ resource "helm_release" "prometheus_operator_crds" {
   chart            = "prometheus-operator-crds"
   namespace        = "monitoring"
   create_namespace = true
-  version          = "7.0.0"
+  version          = "20.0.1"
 }
