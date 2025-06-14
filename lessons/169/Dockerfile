@@ -1,3 +1,3 @@
-FROM postgres:15.13
+FROM postgres:17.5@sha256:6cf6142afacfa89fb28b894d6391c7dcbf6523c33178bdc33e782b3b533a9342
 
 COPY ./sql/*.sql /docker-entrypoint-initdb.d/
