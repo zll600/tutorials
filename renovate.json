@@ -14,7 +14,8 @@
     "lessons/202/*",
     "lessons/144/*",
     "lessons/198/*",
-    "lessons/160/*"
+    "lessons/160/*",
+    "lessons/151/*"
   ],
   "lockFileMaintenance": {
     "enabled": true,
