@@ -5,17 +5,17 @@
     ":automergeDigest"
   ],
   "ignorePaths": [
-    "lessons/247/*",
-    "lessons/129/*",
-    "lessons/152/*",
-    "lessons/218/*",
-    "lessons/158/*",
-    "lessons/159/*",
-    "lessons/202/*",
-    "lessons/144/*",
-    "lessons/198/*",
-    "lessons/160/*",
-    "lessons/151/*"
+    "lessons/247/**",
+    "lessons/129/**",
+    "lessons/152/**",
+    "lessons/218/**",
+    "lessons/158/**",
+    "lessons/159/**",
+    "lessons/202/**",
+    "lessons/144/**",
+    "lessons/198/**",
+    "lessons/160/**",
+    "lessons/151/**"
   ],
   "lockFileMaintenance": {
     "enabled": true,
