@@ -5,7 +5,7 @@ resource "helm_release" "grafana" {
   chart            = "grafana"
   namespace        = "monitoring"
   create_namespace = true
-  version          = "6.50.7"
+  version          = "9.2.2"
 
   set {
     name  = "image.tag"
