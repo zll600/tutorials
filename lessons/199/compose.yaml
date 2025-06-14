@@ -64,7 +64,7 @@ services:
       timeout: 5s
 
   postgres:
-    image: postgres:16.9
+    image: postgres:17.5@sha256:30a72339ce74f2621f0f82cd983a11ade307ec2e634a7998318e8813a6f6f25c
     restart: always
     # ports:
     #   - 5432:5432
