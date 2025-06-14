@@ -33,7 +33,7 @@ services:
     command: --mongodb.uri=mongodb://root:devops123@mongo:27017/ --collect-all
 
   prometheus:
-    image: prom/prometheus:v2.55.1
+    image: prom/prometheus:v3.4.1@sha256:9abc6cf6aea7710d163dbb28d8eeb7dc5baef01e38fa4cd146a406dd9f07f70d
     ports:
       - 9090:9090
     volumes:
