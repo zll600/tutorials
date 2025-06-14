@@ -2,7 +2,23 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>RightCapitalHQ/renovate-config",
-    ":automergeDigest",
+    ":automergeDigest"
   ],
-  "ignorePaths": ["lessons/247/"]
+  "ignorePaths": ["lessons/247/*"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchPackageNames": ["lint", "prettier"],
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    }
+  ]
 }
