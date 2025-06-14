@@ -2,7 +2,7 @@
 version: '3'
 services:
   db:
-    image: mysql:5.7
+    image: mysql:9.3@sha256:04768cb63395f56140b4e92cad7c8d9f48dfa181075316e955da75aadca8a7cd
     volumes:
       - db_data:/var/lib/mysql
     ports:
