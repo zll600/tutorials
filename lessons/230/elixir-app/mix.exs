@@ -30,7 +30,7 @@ defmodule App.MixProject do
       {:telemetry_metrics, "1.0.0"},
       {:jason, "1.4.4"},
       {:bandit, "1.6.1"},
-      {:peep, "3.3.1"}
+      {:peep, "== 4.0.0"}
     ]
   end
 
