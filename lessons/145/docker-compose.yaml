@@ -27,7 +27,7 @@ services:
     - mongo:/data/db
 
   mongo-exporter:
-    image: percona/mongodb_exporter:0.36.0
+    image: percona/mongodb_exporter:2.37.0@sha256:afc6fe95557f506fcf9251f9363592c80abfedad506266d891db5d4c8d9be273
     ports:
     - 9216:9216
     command: --mongodb.uri=mongodb://root:devops123@mongo:27017/ --collect-all
