@@ -13,7 +13,7 @@ COPY cmd/rest-server cmd/rest-server
 
 RUN go build -o /myapp cmd/rest-server/main.go
 
-FROM gcr.io/distroless/base-debian11
+FROM gcr.io/distroless/base-debian12
 
 COPY --from=build /myapp /myapp
 

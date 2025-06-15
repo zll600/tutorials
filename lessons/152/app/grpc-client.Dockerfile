@@ -13,7 +13,7 @@ COPY cmd/grpc-client cmd/grpc-client
 
 RUN go build -o /grpc-client cmd/grpc-client/main.go
 
-FROM gcr.io/distroless/base-debian11
+FROM gcr.io/distroless/base-debian12
 
 COPY --from=build /grpc-client /grpc-client
 

@@ -12,7 +12,7 @@ COPY main.go .
 
 RUN go build -o /myapp main.go
 
-FROM gcr.io/distroless/base-debian11
+FROM gcr.io/distroless/base-debian12
 
 COPY --from=build /myapp /myapp
 

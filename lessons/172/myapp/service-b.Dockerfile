@@ -11,7 +11,7 @@ COPY cmd/service-b/main.go ./cmd/service-b/
 
 RUN go build -o /myapp cmd/service-b/main.go
 
-FROM gcr.io/distroless/base-debian11
+FROM gcr.io/distroless/base-debian12
 
 COPY --from=build /myapp /myapp
 

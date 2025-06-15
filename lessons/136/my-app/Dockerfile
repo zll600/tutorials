@@ -11,7 +11,7 @@ COPY server.go ./
 
 RUN go build -o /my-app
 
-FROM gcr.io/distroless/base-debian11
+FROM gcr.io/distroless/base-debian12
 
 COPY --from=build /my-app /my-app
 
