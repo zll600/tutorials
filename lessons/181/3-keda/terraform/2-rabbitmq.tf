@@ -9,7 +9,7 @@ resource "helm_release" "rabbitmq" {
   chart            = "rabbitmq"
   namespace        = "rabbitmq"
   create_namespace = true
-  version          = "12.15.0"
+  version          = "16.0.9"
 
   set {
     name  = "auth.username"
