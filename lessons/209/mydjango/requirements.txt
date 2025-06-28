@@ -5,7 +5,7 @@ Django==5.1
 django-prometheus==2.3.1
 greenlet==3.0.3
 gunicorn==23.0.0
-isort==5.13.2
+isort==6.0.1
 jmespath==1.0.1
 msgpack==1.0.8
 packaging==24.1
