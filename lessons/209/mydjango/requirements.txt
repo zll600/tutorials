@@ -9,7 +9,7 @@ isort==6.0.1
 jmespath==1.0.1
 msgpack==1.0.8
 packaging==24.1
-prometheus-summary==0.1.2
+prometheus-summary==0.1.6
 prometheus_client==0.22.1
 psycopg==3.2.2
 psycopg-binary==3.2.2
