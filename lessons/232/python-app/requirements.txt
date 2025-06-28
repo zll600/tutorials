@@ -19,7 +19,7 @@ markdown-it-py==3.0.0
 MarkupSafe==3.0.2
 mdurl==0.1.2
 orjson==3.10.12
-packaging==24.2
+packaging==25.0
 prometheus-fastapi-instrumentator==7.0.0
 prometheus_client==0.22.1
 psycopg==3.2.3

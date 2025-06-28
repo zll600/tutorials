@@ -5,6 +5,6 @@ gunicorn==23.0.0
 itsdangerous==2.1.2
 Jinja2==3.1.2
 MarkupSafe==3.0.2
-packaging==23.1
+packaging==25.0
 prometheus-client==0.22.1
 Werkzeug==2.3.7
