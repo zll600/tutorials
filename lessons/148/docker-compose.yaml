@@ -16,7 +16,7 @@ services:
       - 9091:9091
 
   grafana:
-    image: grafana/grafana:9.5.21
+    image: grafana/grafana:12.0.2@sha256:b5b59bfc7561634c2d7b136c4543d702ebcc94a3da477f21ff26f89ffd4214fa
     ports:
       - 3000:3000
     environment:
