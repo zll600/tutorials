@@ -21,7 +21,7 @@ resource "helm_release" "secrets_csi_driver_aws_provider" {
   repository = "https://aws.github.io/secrets-store-csi-driver-provider-aws"
   chart      = "secrets-store-csi-driver-provider-aws"
   namespace  = "kube-system"
-  version    = "0.3.9"
+  version    = "0.3.11"
 
   depends_on = [helm_release.secrets_csi_driver]
 }
