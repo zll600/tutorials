@@ -26,7 +26,7 @@ defmodule App.MixProject do
   defp deps do
     [
       {:ecto_sql, "3.12.1"},
-      {:postgrex, "0.19.3"},
+      {:postgrex, "== 0.20.0"},
       {:telemetry_metrics, "1.0.0"},
       {:jason, "1.4.4"},
       {:bandit, "1.6.1"},
