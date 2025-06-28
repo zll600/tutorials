@@ -5,7 +5,7 @@ edition = "2021"
 
 [dependencies]
 async-trait="0.1"
-pingora = { version = "0.4", features = ["lb", "openssl"] }
+pingora = { version = "0.5", features = ["lb", "openssl"] }
 log = "0.4"
 env_logger = "0.11.5"
 toml = "0.8.19"
