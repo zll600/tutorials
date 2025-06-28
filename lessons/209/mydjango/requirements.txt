@@ -8,7 +8,7 @@ gunicorn==23.0.0
 isort==6.0.1
 jmespath==1.0.1
 msgpack==1.0.8
-packaging==24.1
+packaging==25.0
 prometheus-summary==0.1.2
 prometheus_client==0.22.1
 psycopg==3.2.2
