@@ -5,7 +5,7 @@ go 1.23.2
 require (
 	github.com/google/uuid v1.6.0
 	github.com/prometheus/client_golang v1.20.4
-	go.mongodb.org/mongo-driver v1.17.1
+	go.mongodb.org/mongo-driver v1.17.4
 	gopkg.in/yaml.v2 v2.4.0
 )
 
