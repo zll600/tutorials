@@ -27,7 +27,7 @@ opentelemetry-semantic-conventions==0.41b0
 packaging==25.0
 prometheus-client==0.22.1
 protobuf==6.31.1
-psycopg==3.1.12
+psycopg==3.2.9
 psycopg-binary==3.1.12
 psycopg-pool==3.1.8
 psycopg2-binary==2.9.9
