@@ -3,7 +3,7 @@ module github.com/antonputra/tutorials/lessons/143/go-app
 go 1.19
 
 require (
-	github.com/aws/aws-sdk-go v1.44.171
+	github.com/aws/aws-sdk-go v1.55.7
 	github.com/gofiber/fiber/v2 v2.40.1
 	go.mongodb.org/mongo-driver v1.11.1
 	gopkg.in/yaml.v2 v2.2.8

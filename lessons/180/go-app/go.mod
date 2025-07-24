@@ -3,7 +3,7 @@ module github.com/antonputra/tutorials/lessons/180/go-app
 go 1.21.3
 
 require (
-	github.com/aws/aws-sdk-go v1.46.5
+	github.com/aws/aws-sdk-go v1.55.7
 	github.com/gin-gonic/gin v1.9.1
 	github.com/google/uuid v1.3.1
 	github.com/jackc/pgx/v5 v5.4.3
