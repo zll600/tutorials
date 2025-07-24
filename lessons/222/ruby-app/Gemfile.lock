@@ -73,7 +73,7 @@ GEM
       ostruct (>= 0.2)
     ostruct (0.6.0)
     pg (1.5.9)
-    prometheus-client (4.2.3)
+    prometheus-client (4.2.5)
       base64
     psych (5.1.2)
       stringio
