@@ -3,7 +3,7 @@ cffi==1.16.0
 charset-normalizer==3.3.2
 cryptography==45.0.4
 Deprecated==1.2.14
-idna==3.7
+idna==3.10
 pycparser==2.22
 PyGithub==2.3.0
 PyJWT==2.8.0
