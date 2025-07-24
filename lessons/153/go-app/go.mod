@@ -1,6 +1,8 @@
 module github.com/antonputra/tutorials/lessons/153/go-app
 
-go 1.19
+go 1.22
+
+toolchain go1.24.5
 
 require (
 	github.com/antonputra/tutorials/lessons/151/go-app v0.0.0-20250522082422-e00fd9253fc1
@@ -11,7 +13,7 @@ require (
 	go.opentelemetry.io/otel/metric v0.34.0
 	go.opentelemetry.io/otel/sdk/metric v0.34.0
 	google.golang.org/grpc v1.52.3
-	google.golang.org/protobuf v1.28.1
+	google.golang.org/protobuf v1.36.6
 )
 
 require (
