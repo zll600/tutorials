@@ -1,6 +1,6 @@
 aiomcache==0.8.2
 annotated-types==0.7.0
-anyio==4.8.0
+anyio==4.9.0
 asyncer==0.0.8
 asyncpg==0.30.0
 certifi==2025.6.15
