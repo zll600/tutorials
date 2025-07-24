@@ -3,7 +3,7 @@
 "extends": [
     "config:recommended",
     "helpers:pinGitHubActionDigests"
-]
+],
   "ignorePaths": [
     "lessons/247/**",
     "lessons/129/**",
