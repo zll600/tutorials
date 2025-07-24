@@ -3,7 +3,7 @@ module go-app
 go 1.23.4
 
 require (
-	github.com/antonputra/go-utils v0.1.4
+	github.com/antonputra/go-utils v0.1.5
 	github.com/google/uuid v1.6.0
 	github.com/jackc/pgx/v5 v5.7.1
 	github.com/json-iterator/go v1.1.12
