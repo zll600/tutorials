@@ -4,7 +4,7 @@ go 1.23.5
 
 require (
 	github.com/99designs/gqlgen v0.17.63
-	github.com/antonputra/go-utils v0.1.4
+	github.com/antonputra/go-utils v0.1.5
 	github.com/google/uuid v1.6.0
 	github.com/jackc/pgx/v5 v5.7.2
 	github.com/json-iterator/go v1.1.12

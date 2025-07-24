@@ -3,7 +3,7 @@ module myapp
 go 1.23.3
 
 require (
-	github.com/antonputra/go-utils v0.1.4
+	github.com/antonputra/go-utils v0.1.5
 	github.com/evanphx/wildcat v0.0.0-20141114174135-e7012f664567
 	github.com/gofiber/fiber/v3 v3.0.0-beta.3
 	github.com/jackc/pgx/v5 v5.7.1
