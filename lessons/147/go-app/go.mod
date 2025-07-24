@@ -1,10 +1,12 @@
 module github.com/antonputra/tutorials/lessons/147/go-app
 
-go 1.19
+go 1.22
+
+toolchain go1.24.5
 
 require (
 	google.golang.org/grpc v1.52.0
-	google.golang.org/protobuf v1.28.1
+	google.golang.org/protobuf v1.36.6
 )
 
 require (

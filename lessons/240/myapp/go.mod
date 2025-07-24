@@ -11,7 +11,7 @@ require (
 	github.com/prometheus/client_golang v1.20.5
 	github.com/vektah/gqlparser/v2 v2.5.21
 	google.golang.org/grpc v1.69.4
-	google.golang.org/protobuf v1.36.3
+	google.golang.org/protobuf v1.36.6
 	gopkg.in/yaml.v2 v2.4.0
 )
 

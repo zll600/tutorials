@@ -1,12 +1,14 @@
 module github.com/antonputra/tutorials/lessons/149/app
 
-go 1.19
+go 1.22
+
+toolchain go1.24.5
 
 require (
 	github.com/gofiber/fiber/v2 v2.41.0
 	github.com/prometheus/client_golang v1.14.0
 	google.golang.org/grpc v1.52.0
-	google.golang.org/protobuf v1.28.1
+	google.golang.org/protobuf v1.36.6
 )
 
 require (
