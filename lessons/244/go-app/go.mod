@@ -6,7 +6,7 @@ require (
 	github.com/antonputra/go-utils v0.1.5
 	github.com/evanphx/wildcat v0.0.0-20141114174135-e7012f664567
 	github.com/jackc/pgx/v5 v5.7.2
-	github.com/panjf2000/ants/v2 v2.11.1
+	github.com/panjf2000/ants/v2 v2.11.3
 	github.com/panjf2000/gnet/v2 v2.7.2
 	gopkg.in/yaml.v2 v2.4.0
 )
