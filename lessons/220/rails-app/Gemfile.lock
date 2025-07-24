@@ -197,7 +197,7 @@ GEM
       console (~> 1.8)
       json (~> 2)
       samovar (~> 2.1)
-    prometheus-client (4.2.3)
+    prometheus-client (4.2.5)
       base64
     protocol-hpack (1.5.1)
     protocol-http (0.47.1)
