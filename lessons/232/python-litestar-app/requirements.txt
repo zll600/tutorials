@@ -1,7 +1,7 @@
 aiomcache==0.8.2
 orjson==3.10.12
 asyncpg==0.30.0
-litestar==2.13.0
+litestar==2.16.0
 pydantic==2.10.4
 prometheus_client==0.22.1
 gunicorn==23.0.0
