@@ -6,7 +6,7 @@ require (
 	github.com/aws/aws-sdk-go v1.46.5
 	github.com/gin-gonic/gin v1.9.1
 	github.com/google/uuid v1.3.1
-	github.com/jackc/pgx/v5 v5.4.3
+	github.com/jackc/pgx/v5 v5.7.5
 	github.com/prometheus/client_golang v1.17.0
 	go.opentelemetry.io/otel v1.19.0
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.19.0

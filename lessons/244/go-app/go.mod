@@ -5,7 +5,7 @@ go 1.23.6
 require (
 	github.com/antonputra/go-utils v0.1.5
 	github.com/evanphx/wildcat v0.0.0-20141114174135-e7012f664567
-	github.com/jackc/pgx/v5 v5.7.2
+	github.com/jackc/pgx/v5 v5.7.5
 	github.com/panjf2000/ants/v2 v2.11.1
 	github.com/panjf2000/gnet/v2 v2.7.2
 	gopkg.in/yaml.v2 v2.4.0
@@ -27,10 +27,10 @@ require (
 	github.com/vektra/errors v0.0.0-20140903201135-c64d83aba85a // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
-	golang.org/x/crypto v0.33.0 // indirect
-	golang.org/x/sync v0.11.0 // indirect
-	golang.org/x/sys v0.30.0 // indirect
-	golang.org/x/text v0.22.0 // indirect
+	golang.org/x/crypto v0.37.0 // indirect
+	golang.org/x/sync v0.13.0 // indirect
+	golang.org/x/sys v0.32.0 // indirect
+	golang.org/x/text v0.24.0 // indirect
 	google.golang.org/protobuf v1.36.5 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 )
