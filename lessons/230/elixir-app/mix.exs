@@ -29,7 +29,7 @@ defmodule App.MixProject do
       {:postgrex, "== 0.20.0"},
       {:telemetry_metrics, "1.0.0"},
       {:jason, "1.4.4"},
-      {:bandit, "1.6.1"},
+      {:bandit, "== 1.7.0"},
       {:peep, "== 4.0.0"}
     ]
   end
