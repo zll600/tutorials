@@ -1,9 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>RightCapitalHQ/renovate-config",
-    ":automergeDigest"
-  ],
+"extends": [
+    "config:recommended",
+    "helpers:pinGitHubActionDigests"
+]
   "ignorePaths": [
     "lessons/247/**",
     "lessons/129/**",
