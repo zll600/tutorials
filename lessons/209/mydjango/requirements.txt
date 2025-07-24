@@ -13,7 +13,7 @@ prometheus-summary==0.1.2
 prometheus_client==0.22.1
 psycopg==3.2.2
 psycopg-binary==3.2.2
-psycopg-pool==3.2.3
+psycopg-pool==3.2.6
 pynvim==0.5.2
 python-dateutil==2.9.0.post0
 quantile-estimator==0.1.3

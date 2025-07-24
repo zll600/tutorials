@@ -8,6 +8,6 @@ MarkupSafe==3.0.2
 packaging==25.0
 psycopg==3.2.1
 psycopg-binary==3.2.1
-psycopg-pool==3.2.2
+psycopg-pool==3.2.6
 typing_extensions==4.12.2
 Werkzeug==3.0.3
