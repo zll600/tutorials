@@ -10,6 +10,8 @@ github.com/andybalholm/cascadia v1.3.2 h1:3Xi6Dw5lHF15JtdcmAHD3i1+T8plmv7BQ/nsVi
 github.com/andybalholm/cascadia v1.3.2/go.mod h1:7gtRlve5FxPPgIgX36uWBX58OdBsSS6lUvCFb+h7KvU=
 github.com/antonputra/go-utils v0.1.4 h1:roJ6w4XKPFAPrhels+aldB48qGZrpNbJtANc014IEnk=
 github.com/antonputra/go-utils v0.1.4/go.mod h1:rqVzmpjy/gPlBLZKD+0P7HNNUrH0VZA65PmySIArxsI=
+github.com/antonputra/go-utils v0.1.5 h1:xixMzHAcd66MXGf3C/djbaOFw3AFsm0ZzuXfwviT83Y=
+github.com/antonputra/go-utils v0.1.5/go.mod h1:GtMYY62HViJnphNiXqce9btZRHMmrdUOfdZEgXJkb3M=
 github.com/arbovm/levenshtein v0.0.0-20160628152529-48b4e1c0c4d0 h1:jfIu9sQUG6Ig+0+Ap1h4unLjW6YQJpKZVmUzxsD4E/Q=
 github.com/arbovm/levenshtein v0.0.0-20160628152529-48b4e1c0c4d0/go.mod h1:t2tdKJDJF9BV14lnkjHmOQgcvEKgtqs5a1N3LNdJhGE=
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=

@@ -3,7 +3,7 @@ module client
 go 1.23.4
 
 require (
-	github.com/antonputra/go-utils v0.1.4
+	github.com/antonputra/go-utils v0.1.5
 	github.com/jackc/pgx/v5 v5.7.2
 	github.com/prometheus/client_golang v1.20.5
 	gopkg.in/yaml.v2 v2.4.0
