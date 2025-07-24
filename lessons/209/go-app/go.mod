@@ -7,7 +7,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/config v1.27.32
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.61.1
 	github.com/google/uuid v1.6.0
-	github.com/jackc/pgx/v5 v5.6.0
+	github.com/jackc/pgx/v5 v5.7.5
 	github.com/prometheus/client_golang v1.20.2
 	gopkg.in/yaml.v2 v2.4.0
 )
