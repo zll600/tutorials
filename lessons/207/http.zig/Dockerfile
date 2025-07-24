@@ -1,4 +1,4 @@
-FROM debian:12.7 AS build
+FROM debian:12.11 AS build
 
 ARG ZIG_VER=0.14.0-dev.1511+54b668f8a
 
@@ -16,7 +16,7 @@ COPY . .
 # in this app, so ReleaseSmall will give a smaller binary / better use of CPU cache
 RUN /opt/zig/zig build -Doptimize=ReleaseSmall -Dcpu=baseline
 
-FROM debian:12.6-slim
+FROM debian:12.11-slim
 
 RUN apt-get update && apt-get install -y ca-certificates
 

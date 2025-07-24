@@ -1,4 +1,4 @@
-FROM debian:12.7 AS build
+FROM debian:12.11 AS build
 
 ARG ZIG_VER=0.13.0
 
@@ -14,7 +14,7 @@ COPY . .
 
 RUN /opt/zig/zig build -Doptimize=ReleaseFast
 
-FROM debian:12.7-slim
+FROM debian:12.11-slim
 
 RUN apt-get update && apt-get install -y ca-certificates
 
