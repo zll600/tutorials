@@ -32,7 +32,7 @@ resource "helm_release" "internal_ingress_nginx_arm64" {
   chart            = "ingress-nginx"
   namespace        = "ingress-nginx"
   create_namespace = true
-  version          = "4.4.2"
+  version          = "4.12.3"
 
   set {
     name  = "controller.ingressClassResource.name"
@@ -94,7 +94,7 @@ resource "helm_release" "internal_ingress_nginx_amd64" {
   chart            = "ingress-nginx"
   namespace        = "ingress-nginx"
   create_namespace = true
-  version          = "4.4.2"
+  version          = "4.12.3"
 
   set {
     name  = "controller.ingressClassResource.name"

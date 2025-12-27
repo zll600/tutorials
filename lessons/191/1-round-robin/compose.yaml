@@ -2,7 +2,7 @@
 services:
 
   loadbalancer:
-    image: nginx:1.25.4
+    image: nginx:1.28.0
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
     ports:

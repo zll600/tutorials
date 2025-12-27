@@ -4,19 +4,19 @@ version: "3"
 services:
 
   prometheus:
-    image: prom/prometheus:v2.41.0
+    image: prom/prometheus:v3.4.1@sha256:9abc6cf6aea7710d163dbb28d8eeb7dc5baef01e38fa4cd146a406dd9f07f70d
     ports:
       - 9090:9090
     volumes:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
 
   pushgateway:
-    image: prom/pushgateway:v1.5.1
+    image: prom/pushgateway:v1.11.1
     ports:
       - 9091:9091
 
   grafana:
-    image: grafana/grafana:9.3.0
+    image: grafana/grafana:9.5.21
     ports:
       - 3000:3000
     environment:

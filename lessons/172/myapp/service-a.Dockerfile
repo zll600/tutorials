@@ -1,4 +1,4 @@
-FROM golang:1.20.6-bullseye AS build
+FROM golang:1.24.4-bullseye AS build
 
 WORKDIR /app
 
@@ -11,7 +11,7 @@ COPY cmd/service-a/main.go ./cmd/service-a/
 
 RUN go build -o /myapp cmd/service-a/main.go
 
-FROM gcr.io/distroless/base-debian11
+FROM gcr.io/distroless/base-debian12
 
 COPY --from=build /myapp /myapp
 

@@ -1,5 +1,5 @@
 # FROM golang:1.19.5-buster AS build
-FROM golang:1.19.5 AS build
+FROM golang:1.24.4 AS build
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ COPY cmd/grpc-server cmd/grpc-server
 
 RUN go build -o /grpc-server cmd/grpc-server/main.go
 
-FROM gcr.io/distroless/base-debian11
+FROM gcr.io/distroless/base-debian12
 
 COPY --from=build /grpc-server /grpc-server
 

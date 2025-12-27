@@ -1,4 +1,4 @@
-FROM rust:1.66.1-bullseye as build
+FROM rust:1.87.0-bullseye as build
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ COPY . .
 
 RUN cargo build --release
 
-FROM debian:11.6-slim
+FROM debian:12.11-slim@sha256:90522eeb7e5923ee2b871c639059537b30521272f10ca86fdbbbb2b75a8c40cd
 
 COPY --from=build /app/target/release/hardware-server /hardware-server
 

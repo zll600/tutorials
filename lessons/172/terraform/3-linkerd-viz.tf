@@ -5,7 +5,7 @@ resource "helm_release" "linkerd_viz" {
   chart            = "linkerd-viz"
   namespace        = "linkerd"
   create_namespace = true
-  version          = "30.8.5"
+  version          = "30.12.11"
 
   depends_on = [helm_release.linkerd_crds]
 }

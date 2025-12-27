@@ -5,7 +5,7 @@ resource "helm_release" "external_ingress_nginx" {
   chart            = "ingress-nginx"
   namespace        = "ingress-nginx"
   create_namespace = true
-  version          = "4.4.2"
+  version          = "4.12.3"
 
   set {
     name  = "controller.ingressClassResource.name"

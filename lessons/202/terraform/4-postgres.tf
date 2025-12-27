@@ -4,7 +4,7 @@ resource "helm_release" "postgresql" {
   repository       = "https://charts.bitnami.com/bitnami"
   chart            = "postgresql"
   namespace        = "db"
-  version          = "15.5.23"
+  version          = "16.7.10"
   create_namespace = true
 
   values = [file("values/postgresql.yaml")]

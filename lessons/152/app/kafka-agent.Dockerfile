@@ -1,5 +1,5 @@
 # FROM golang:1.19.5-buster AS build
-FROM golang:1.19.5 AS build
+FROM golang:1.24.4 AS build
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ COPY cmd/kafka-agent cmd/kafka-agent
 
 RUN go build -o /kafka-agent cmd/kafka-agent/main.go
 
-FROM gcr.io/distroless/base-debian11
+FROM gcr.io/distroless/base-debian12
 
 COPY --from=build /kafka-agent /kafka-agent
 

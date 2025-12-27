@@ -5,7 +5,7 @@ resource "helm_release" "external_nginx" {
   chart            = "ingress-nginx"
   namespace        = "ingress"
   create_namespace = true
-  version          = "4.5.2"
+  version          = "4.12.3"
 
   set {
     name  = "controller.image.tag"

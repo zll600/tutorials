@@ -5,7 +5,7 @@ resource "helm_release" "loadtester" {
   chart            = "loadtester"
   namespace        = "istio-system"
   create_namespace = true
-  version          = "0.28.1"
+  version          = "0.35.0"
 
   depends_on = [helm_release.flagger]
 }

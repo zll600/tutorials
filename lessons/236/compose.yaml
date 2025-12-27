@@ -12,7 +12,7 @@ services:
       - private
 
   memcache:
-    image: memcached:1.6.34
+    image: memcached:1.6.38
     ports:
       - 11211:11211
     networks:

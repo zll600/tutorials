@@ -5,7 +5,7 @@ resource "helm_release" "linkerd_control_plane" {
   chart            = "linkerd-control-plane"
   namespace        = "linkerd"
   create_namespace = true
-  version          = "1.12.5"
+  version          = "1.16.11"
 
   set {
     name  = "identityTrustAnchorsPEM"

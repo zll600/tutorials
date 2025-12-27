@@ -1,4 +1,4 @@
-FROM golang:1.19.4-buster AS build
+FROM golang:1.20.5-buster AS build
 
 WORKDIR /app
 
@@ -12,7 +12,7 @@ COPY basic_collector.go basic.go .
 
 RUN go build -o /exporter cmd/exporter/main.go
 
-FROM gcr.io/distroless/base-debian11
+FROM gcr.io/distroless/base-debian12
 
 COPY --from=build /exporter /exporter
 

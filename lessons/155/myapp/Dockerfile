@@ -1,4 +1,4 @@
-FROM golang:1.19.6-buster AS build
+FROM golang:1.20.5-buster AS build
 
 WORKDIR /app
 
@@ -11,7 +11,7 @@ COPY cmd/main.go ./cmd/main.go
 
 RUN go build -o /myapp cmd/main.go
 
-FROM gcr.io/distroless/base-debian11
+FROM gcr.io/distroless/base-debian12
 
 COPY --from=build /myapp /myapp
 
