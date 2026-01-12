@@ -3,7 +3,7 @@ module github.com/antonputra/tutorials/lessons/153/go-app
 go 1.19
 
 require (
-	github.com/antonputra/tutorials/lessons/151/go-app v0.0.0-20230204010310-7b1be8c0a447
+	github.com/antonputra/tutorials/lessons/151/go-app v0.0.0-20250522082422-e00fd9253fc1
 	github.com/prometheus/client_golang v1.14.0
 	github.com/valyala/fasthttp v1.44.0
 	go.opentelemetry.io/otel v1.11.2
